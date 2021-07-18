@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	
+	display:block; margin:0;
+}

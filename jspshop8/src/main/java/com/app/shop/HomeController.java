@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.app.shop.vo.BoardVo;
+
 
 
 @Controller
-public class HomeController {
+public class HomeController{
 	
 	@GetMapping("/")
 	public String index() {
@@ -27,6 +29,7 @@ public class HomeController {
 	public String list(Model model) {
 		
 		model.addAttribute("qwe", "ddd");
+		
 		return "board/list";
 	}
 	
@@ -36,14 +39,16 @@ public class HomeController {
 	}
 
 	
-//	@GetMapping("/main")
-//	public String main() {
-//		return "board/main";
-//	}
-	
-	@GetMapping("/de")
+	@GetMapping("/home")
 	public String de() {
-		return "board/de";
+		return "board/home";
 	}
+	
+	@GetMapping("/index2")
+	public String index2() {
+		return "index2";
+	}
+	
+	
 	
 }

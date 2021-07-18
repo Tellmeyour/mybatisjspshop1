@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<!-- 사용할 인터페이스의 경로 -->
+    
+    
+<mapper namespace="com.app.shop.domain.repository.BoardRepository">
+
+	<!-- <insert id="good">
+		INSERT INTO newboard5 VALUES('hello', 'world')
+	</insert> -->
+	
+	<select id="selectBoardList" resultType="BoardVo">
+		select * from newboard5 where title = 'hello'
+	</select>
+	
+	<select id="selectqqqq" resultType="BoardVo">
+		select * from newboard5 where title = 'qqqq'
+	</select>
+	
+	
+	
+	<insert id="good" parameterType="BoardVo">
+		INSERT INTO newboard5 VALUES(#{title}, #{content})
+	</insert> 
+	
+	<!-- <insert id="post" parameterType="BoardVo">
+		INSERT INTO newboard4 (title, content)
+    	VALUES(#{title}, #{content})
+	</insert> -->
+
+</mapper> 

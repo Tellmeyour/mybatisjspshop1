@@ -1,0 +1,8 @@
+
+function good(){
+	
+	alert("ddd");
+}
+
+
+
