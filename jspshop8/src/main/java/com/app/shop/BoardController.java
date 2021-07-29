@@ -16,12 +16,11 @@ import com.app.shop.vo.BoardVo;
 import lombok.AllArgsConstructor;
 
 
+@AllArgsConstructor
 @Controller
 public class BoardController {
 
-	public BoardService boardservice;	
-	
-	@Autowired
+
 	private BoardService2 boardservice2;
 	
 	

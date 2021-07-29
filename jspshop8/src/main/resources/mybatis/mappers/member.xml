@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.app.shop.domain.repository.MemberRepository">
+
+	<select id="idConfirm" resultType="MemberVo" parameterType="String">
+		select * from newmember1 where userid = #{userid}
+	</select>
+	
+
+</mapper>

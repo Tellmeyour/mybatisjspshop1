@@ -7,9 +7,6 @@
     
 <mapper namespace="com.app.shop.domain.repository.BoardRepository">
 
-	<!-- <insert id="good">
-		INSERT INTO newboard5 VALUES('hello', 'world')
-	</insert> -->
 	
 	<select id="selectBoardList" resultType="BoardVo">
 		select * from newboard5 where title = 'hello'
@@ -24,10 +21,6 @@
 	<insert id="good" parameterType="BoardVo">
 		INSERT INTO newboard5 VALUES(#{title}, #{content})
 	</insert> 
-	
-	<!-- <insert id="post" parameterType="BoardVo">
-		INSERT INTO newboard4 (title, content)
-    	VALUES(#{title}, #{content})
-	</insert> -->
+
 
 </mapper> 
